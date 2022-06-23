@@ -1,0 +1,118 @@
+@charset 'utf-8';
+
+.container{
+position: relative;
+display: flex;
+/* height: 500px; */
+background-color: skyblue;
+justify-content: space-between;
+/* flex-direction:row; */
+/* flex-direction: row-reverse;
+flex-direction: column; */
+/* flex-direction: column-reverse; */
+/* flex-wrap: nowrap;
+flex-wrap: wrap;
+flex-wrap: wrap-reverse; */
+
+/* flex-flow:row nowrap;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+/* 여백을 얼마나 나눠 쓸것인가 */
+/* justify-content: space-around; */ 
+/* 균일하게 여백을 준다. */
+
+/* align-items: stretch;
+align-items: flex-start;
+align-items: flex-end;
+align-items: center; */
+/* align-items: baseline; */
+
+/* 베이스라인
+어느 한 것을 기준으로 여백이 잡힌다 */
+/* 스트레치- 부모 높이만큼 가득 채워라  */
+
+/* 얼라인 콘텐츠는 줄내림이 되야한다. */
+/* flex-wrap: wrap;
+align-content: stretch;
+align-content: space-around; */
+
+}
+
+
+/* 부모가 자식을 제어함
+부모가 자식을 배치하는데 영향을 미침 */
+/* 플렉스는 레이아웃 배치
+기본값 로우 노랩 */
+/* 다이렉션 -방향
+로우는 가로   */
+/* overflow,float 해야만 flex처럼 가능 */
+/* 로우 리벌스 - 값이 뒤집어짐 */
+/* 위아래 배치 -칼럼 */
+/* 플랙스 nowrap 줄내림 X
+값이 줄어든다 */
+/* wrap 300만큼 공간이 나오지않아 
+줄내림 가능 */
+/* wrap-reverse
+끝에서부터 줄내려라 */
+
+/* 플렉스 플로우 축약형 */
+.item{
+  position: relative;
+  display: block;
+  background-color: yellow;
+border: 5px solid #000;
+flex-basis: 200px;
+
+}
+
+.item:nth-child(2){
+  margin-left: auto;
+}
+/* 플렉스일 때 마진 레프트 오토
+//                        // 이렇게 띄워짐 */
+/* .item:nth-child(1){
+background-color: red;
+flex-grow: 5;
+flex-shrink: 5;
+} */
+/* 그로우 늘어날때는 누가 더 많이 차지하고
+슈링크 줄어들때 누가 더 줄어들것이냐 */
+/* 슈링크 -공간이 부족한데 누가 더 많이 줄어들것인가? */
+/* 남은 여백을 균등분할해서 늘어나겠다 */
+/* 여백이 남는걸 균등하게 가져가겠다 */
+
+/* 등분해서 나눠서 가져감 */
+
+/* .item:nth-child(2){
+background-color: green;
+flex-grow: 1;
+flex-shrink: 1;
+}
+.item:nth-child(3){
+  background-color: blue;
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+.item:nth-child(4){
+background-color: pink;
+flex-grow: 1;
+flex-shrink: 1;
+}
+.item:nth-child(5){
+background-color: hotpink;
+flex-grow: 1;
+flex-shrink: 1;
+} */
+
+/* .tb{
+  background-color: pink;
+  order:1;
+} */
+
+/* 숫자 오더값이 클수록 뒤로
+작을수록 앞으로 */
+/* 
+마이너스도 작기때문에 앞으로 배치 */
+
